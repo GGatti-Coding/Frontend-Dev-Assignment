@@ -18,8 +18,17 @@ const schoolInfo = {
 
 const Footer = () => {
     return (
-        <footer>
-            
+        <footer className="max-w-5xl mx-auto px-6 py-8 text-center text-xs text-slate-500">
+            {/* School name */}
+            <p className="font-semibold">{schoolInfo.name}</p>
+
+            {/* Contact details */}
+            <p>{schoolInfo.address}</p>
+            <p>
+                {schoolInfo.phone} · {schoolInfo.email}
+            </p>
         </footer>
     );
 };
+
+export default Footer;
