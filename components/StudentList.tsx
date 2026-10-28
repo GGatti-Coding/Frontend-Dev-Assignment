@@ -38,7 +38,7 @@ const StudentList = ({ students, onRemove }: StudentListProps) => {
       {students.map((student) => (
         <StudentCard
           key={student.id}
-          student={student}
+          {...student}
           onRemove={onRemove}
         />
       ))}
