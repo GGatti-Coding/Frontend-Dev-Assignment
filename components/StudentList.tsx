@@ -1,4 +1,3 @@
-
 /*
 File: StudentList.tsx
 Author: Seungwon Lee
