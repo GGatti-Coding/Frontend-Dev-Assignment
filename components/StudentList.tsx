@@ -1,7 +1,7 @@
 
 /*
 File: StudentList.tsx
-Author: Your Name
+Author: Seungwon Lee
 Date: October 26, 2026
 
 This component receives an array of students and an onRemove callback.
