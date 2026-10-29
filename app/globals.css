@@ -1,1 +1,15 @@
+/*
+ * File: globals.css
+ * Author: Guilherme Gatti
+ * Date: 2026-10-28
+ * Description: Global stylesheet loaded once by app/layout.tsx. It has
+ * no inputs. It imports Tailwind CSS, which makes all the utility classes
+ * available in every component, and sets the page font to Geist. All
+ * other styling is done with Tailwind classes inside the components.
+ */
+
 @import "tailwindcss";
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}

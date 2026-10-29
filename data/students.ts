@@ -1,4 +1,14 @@
-// exports an interface named Student and an array of at least eight students 
+/*
+ * File: students.ts
+ * Author: Tejanpreet Singh Dherdi
+ * Date: 2026-10-28
+ * Description: Holds the data for the student portal. It has no inputs.
+ * It exports the Student interface, which describes one student with an
+ * id, first name, last name, grade (9 to 12) and average (out of 100).
+ * It also exports the students array that StudentPortal uses as its
+ * starting list. The data covers every grade, has three students in
+ * grade 12 and four with an average of 80 or more.
+ */
 
 export interface Student {
    id : number;
