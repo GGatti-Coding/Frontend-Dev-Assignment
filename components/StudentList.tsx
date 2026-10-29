@@ -11,7 +11,7 @@ A unique student ID is used as the key for each card.
 A message is displayed when there are no students to show.
 */
 
-import type { Student } from "../data/students";
+import type { Student } from "@/data/students";
 import StudentCard from "./StudentCard";
 
 interface StudentListProps {
