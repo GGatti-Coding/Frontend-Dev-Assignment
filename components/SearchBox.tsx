@@ -8,11 +8,6 @@
  * reported to StudentPortal, which does the case-insensitive filtering.
  */
 
-"use client"
-
-import { useState } from "react"
-import { Students } from "@/data/students"
-import { Student } from "@/data/students"
 
 interface SearchBoxProps {
   query: string,
@@ -28,7 +23,7 @@ const SearchBox = ({ query, onQueryChange }: SearchBoxProps) => {
         value={query}
         onChange={(event) => onQueryChange(event.target.value)}
         placeholder="Search by name"
-        className="w-xl rounded-lg border border-slate-300 px-4 py-2 ml-2 text-slate-900 focus:border-blue-500 focus:outline-none" />
+        className="w-full max-w-xl rounded-lg border border-slate-300 px-4 py-2  text-slate-900 focus:border-blue-500 focus:outline-none" />
     </div>
   );
 };

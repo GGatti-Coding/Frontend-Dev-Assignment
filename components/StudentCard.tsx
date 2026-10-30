@@ -1,5 +1,3 @@
-"use client";
-
 /*
  * File: StudentCard.tsx
  * Author: Tejanpreet Singh Dherdi
@@ -13,10 +11,15 @@
  * asks the parent to remove the student.
  */
 
+"use client";
+
 import { useState } from "react";
 import { Student } from "@/data/students";
 
-type StudentProps = Student & {onRemove: (id: number) => void};
+interface StudentProps extends Student {
+       onRemove: (id: number) => void
+      };
+
 
 const StudentCard = ({id , firstName , lastName , grade , average , onRemove } : StudentProps) => {
      const [showDetails ,  setShowDetails] = useState(false);
@@ -40,7 +43,7 @@ const StudentCard = ({id , firstName , lastName , grade , average , onRemove } :
            <p> Average : {average}</p>
            {average >= 80 && 
               <span className="inline-block w-fit px-3 py-1 rounded-full bg-amber-100 text-amber-800 border border-amber-300 text-xs font-semibold">
-                 🏅Honour roll
+                 🏅
               </span>
            } 
           </div>

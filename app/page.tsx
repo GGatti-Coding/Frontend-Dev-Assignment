@@ -9,10 +9,12 @@
  */
 import StudentPortal from "@/components/StudentPortal";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className="px-5">
+    <div className="max-w-5xl mx-auto px-6 py-8">
       <StudentPortal />
     </div>
   );
 }
+
+export default Home;
