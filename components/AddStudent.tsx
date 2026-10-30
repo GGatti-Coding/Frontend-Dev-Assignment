@@ -1,3 +1,15 @@
+/*
+ * File: AddStudent.tsx
+ * Author: Tejanpreet Singh Dherdi 
+ * Date: 2026-10-29
+ * Description: Form with four inputs (first name, last name, grade and
+ * average) and an Add student button. Grade starts at 9 and average at 70.
+ * If either name is empty, nothing is added. After a student is added, the
+ * name inputs are emptied and the two numbers return to their starting
+ * values. It takes an addStudent callback as a prop and keeps the form
+ * values in its own state.
+ */
+
 "use client";
 
 import { useState } from "react";
