@@ -51,15 +51,15 @@ const StudentPortal = () => {
   return (
     <div className="flex flex-col gap-8">
       <section>
-        <h2 className = "text=x1 font-bold text-slate-900">
+        <h2 id="overview" className = "text-xl font-bold text-slate-900">
           Overview
         </h2>
 
         <StatsPanel students = {students} />
       </section>
 
-      <section className = "flex flex-col gap-4">
-        <h2 className = "text-x1 font-bold text-slate-900">
+      <section id="students" className = "flex flex-col gap-4">
+        <h2 className = "text-xl font-bold text-slate-900">
           Students
         </h2>
 
@@ -73,7 +73,7 @@ const StudentPortal = () => {
       </section>
 
       <section>
-        <h2 className = "text-x1 font-bold text-slate-900">Add a student</h2>
+        <h2 id="add-student" className = "text-xl font-bold text-slate-900 pb-2">Add a student</h2>
         <AddStudent addStudent={addStudent}/>
       </section>
     </div>

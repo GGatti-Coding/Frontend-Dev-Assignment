@@ -14,7 +14,7 @@ export interface Student {
    id : number;
    firstName: string;
    lastName: string;
-   grade : 9 | 10 | 11 | 12;
+   grade : number;
    average : number;
   };
 

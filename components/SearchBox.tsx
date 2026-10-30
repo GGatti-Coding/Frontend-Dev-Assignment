@@ -15,24 +15,21 @@ import { Students } from "@/data/students"
 import { Student } from "@/data/students"
 
 interface SearchBoxProps {
-  query : string ,
-  onQueryChange: (query : string) => void
+  query: string,
+  onQueryChange: (query: string) => void
 };
 
-const SearchBox = ({query , onQueryChange} : SearchBoxProps) => {
+const SearchBox = ({ query, onQueryChange }: SearchBoxProps) => {
 
-  
-  return(<div>
-    <label htmlFor="student-search">
-      Search students
-    </label>
 
-    <input type="text" 
-           value={query} 
-           onChange={(event) => onQueryChange(event.target.value)} 
-           placeholder="search by name" 
-           className="rounded-lg border border-slate-300 px-4 py-2 text-slate-900 focus:border-blue-500 focus:outline-none"/>
-  </div>
+  return (
+    <div>
+      <input type="text"
+        value={query}
+        onChange={(event) => onQueryChange(event.target.value)}
+        placeholder="Search by name"
+        className="w-xl rounded-lg border border-slate-300 px-4 py-2 ml-2 text-slate-900 focus:border-blue-500 focus:outline-none" />
+    </div>
   );
 };
 
